@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { BlankPageComponent } from './blank-page.component';
+import { BlankPageComponent } from './device-register.component';
 
 const routes: Routes = [
     { path: '', component: BlankPageComponent }

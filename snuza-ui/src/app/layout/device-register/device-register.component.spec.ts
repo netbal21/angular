@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlankPageComponent } from './blank-page.component';
+import { BlankPageComponent } from './device-register.component';
 
 describe('BlankPageComponent', () => {
   let component: BlankPageComponent;

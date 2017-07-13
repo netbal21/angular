@@ -7,7 +7,7 @@ const routes: Routes = [
         path: '', component: LayoutComponent,
         children: [
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-            { path: 'blank-page', loadChildren: './blank-page/blank-page.module#BlankPageModule' },
+            { path: 'device-register', loadChildren: './device-register/device-register.module#BlankPageModule' },
            
             
         ]
