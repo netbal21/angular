@@ -10,7 +10,7 @@ const routes: Routes = [
             { path: 'device-register', loadChildren: './device-register/device-register.module#DeviceRegisterModule' },
             { path: 'devices-info', loadChildren: './devices-info/devices-info.module#DeviceInfoModule' },
             { path: 'forms', loadChildren: './form/form.module#FormModule' },
-
+            { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
         ]
     }
 ];

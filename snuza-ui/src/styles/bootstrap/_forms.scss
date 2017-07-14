@@ -9,7 +9,7 @@
   width: 100%;
   // // Make inputs at least the height of their button counterpart (base line-height + padding + border)
   // height: $input-height;
-  padding: $input-padding-y $input-padding-x;
+  padding: 4px 4px;
   font-size: $font-size-base;
   line-height: $input-line-height;
   color: $input-color;
@@ -67,7 +67,7 @@
 select.form-control {
   &:not([size]):not([multiple]) {
     $select-border-width: ($border-width * 2);
-    height: calc(#{$input-height} + #{$select-border-width});
+    height: 26px;
   }
 
   &:focus::-ms-value {
@@ -98,6 +98,7 @@ select.form-control {
   padding-top: calc(#{$input-padding-y} - #{$input-btn-border-width} * 2);
   padding-bottom: calc(#{$input-padding-y} - #{$input-btn-border-width} * 2);
   margin-bottom: 0; // Override the `<label>` default
+    color:#222;
 }
 
 .col-form-label-lg {
@@ -188,11 +189,19 @@ select.form-control-lg {
 
 .form-group {
   margin-bottom: $form-group-margin-bottom;
+    color:#222;
+    margin-bottom: 1rem;
+    color: #222;
+    width: 360px;
+    padding-right: 23px;
+    margin-left: 10px;
+    margin-right: 16px;
 }
 
 .form-text {
   display: block;
   margin-top: $form-text-margin-top;
+
 }
 
 
@@ -323,13 +332,12 @@ select.form-control-lg {
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0;
+
     }
 
     // Allow folks to *not* use `.form-group`
     .form-control {
-      display: inline-block;
-      width: auto; // Prevent labels from stacking above inputs in `.form-group`
-      vertical-align: middle;
+padding: 10px 20px;
     }
 
     // Make static controls behave like regular ones
@@ -384,7 +392,7 @@ select.form-control-lg {
     .has-feedback .form-control-feedback {
       top: 0;
     }
-    
+
   }
 
 }
