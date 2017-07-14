@@ -7,15 +7,16 @@ const routes: Routes = [
         path: '', component: LayoutComponent,
         children: [
             { path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule' },
-            { path: 'device-register', loadChildren: './device-register/device-register.module#BlankPageModule' },
-           
-            
+            { path: 'device-register', loadChildren: './device-register/device-register.module#DeviceRegisterModule' },
+            { path: 'devices-info', loadChildren: './devices-info/devices-info.module#DeviceInfoModule' },
+            { path: 'forms', loadChildren: './form/form.module#FormModule' },
+
         ]
     }
 ];
 
-@NgModule({
-    imports: [RouterModule.forChild(routes)],
+@NgModule( {
+    imports: [RouterModule.forChild( routes )],
     exports: [RouterModule]
-})
+} )
 export class LayoutRoutingModule { }

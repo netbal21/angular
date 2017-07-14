@@ -6,7 +6,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { LayoutRoutingModule } from './layout-routing.module';
 import { LayoutComponent } from './layout.component';
 import { HeaderComponent, SidebarComponent } from '../shared';
-import { DevicesInfoComponent } from './devices-info/devices-info.component';
+import { SubscriptionComponent } from './subscription/subscription.component';
 
 @NgModule({
     imports: [
@@ -19,7 +19,7 @@ import { DevicesInfoComponent } from './devices-info/devices-info.component';
         LayoutComponent,
         HeaderComponent,
         SidebarComponent,
-        DevicesInfoComponent,
+        SubscriptionComponent,
     ]
 })
 export class LayoutModule { }

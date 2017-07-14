@@ -70,3 +70,6 @@ $topnav-background-color: #94a1dd;
 .header .navbar {
     background: $topnav-background-color !important;
 }
+.navbar-inverse .navbar-nav .nav-link {
+    color: #fff;
+}

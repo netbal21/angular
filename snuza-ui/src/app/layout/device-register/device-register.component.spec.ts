@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { BlankPageComponent } from './device-register.component';
+import { DeviceRegisterComponent } from './device-register.component';
 
 describe('BlankPageComponent', () => {
-  let component: BlankPageComponent;
-  let fixture: ComponentFixture<BlankPageComponent>;
+  let component: DeviceRegisterComponent;
+  let fixture: ComponentFixture<DeviceRegisterComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BlankPageComponent ]
+      declarations: [ DeviceRegisterComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(BlankPageComponent);
+    fixture = TestBed.createComponent(DeviceRegisterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

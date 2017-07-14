@@ -5,7 +5,7 @@ import { Component, OnInit } from '@angular/core';
     templateUrl: './device-register.component.html',
     styleUrls: ['./device-register.component.scss']
 })
-export class BlankPageComponent implements OnInit {
+export class DeviceRegisterComponent implements OnInit {
     constructor() {
     }
 
