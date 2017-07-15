@@ -9,7 +9,6 @@ import {
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
 import {
-    TimelineComponent,
     ChangePasswordComponent,
     AvatarComponent
 } from './components';
@@ -25,7 +24,6 @@ import { StatModule } from '../../shared';
     ],
     declarations: [
         DashboardComponent,
-        TimelineComponent,
         ChangePasswordComponent,
         AvatarComponent
     ]
