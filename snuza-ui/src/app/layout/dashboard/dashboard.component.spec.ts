@@ -3,7 +3,7 @@ import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {
   TimelineComponent,
-  NotificationComponent,
+  ChangePasswordComponent,
   ChatComponent
 } from './components';
 import { StatModule } from '../../shared';
@@ -23,7 +23,7 @@ describe('DashboardComponent', () => {
       declarations: [
         DashboardComponent,
         TimelineComponent,
-        NotificationComponent,
+        ChangePasswordComponent,
         ChatComponent
       ]
     })
