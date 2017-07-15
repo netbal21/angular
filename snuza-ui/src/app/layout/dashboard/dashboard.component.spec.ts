@@ -2,10 +2,9 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { NgbCarouselModule, NgbAlertModule } from '@ng-bootstrap/ng-bootstrap';
 
 import {
-  TimelineComponent,
   ChangePasswordComponent,
-  ChatComponent
-} from './components';
+  AvatarComponent
+} from '../profile/components';
 import { StatModule } from '../../shared';
 import { DashboardComponent } from './dashboard.component';
 
@@ -22,9 +21,8 @@ describe('DashboardComponent', () => {
     ],
       declarations: [
         DashboardComponent,
-        TimelineComponent,
         ChangePasswordComponent,
-        ChatComponent
+          AvatarComponent
       ]
     })
     .compileComponents();

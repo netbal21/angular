@@ -5,12 +5,23 @@ import { ProfileRoutingModule } from './profile-routing.module';
 import { ProfileComponent } from './profile.component';
 import { PageHeaderModule } from './../../shared';
 
+import {
+    ChangePasswordComponent,
+    AvatarComponent
+} from '../profile/components';
+import { StatModule } from '../../shared';
+
 @NgModule({
     imports: [
         CommonModule,
         ProfileRoutingModule,
-        PageHeaderModule
+        PageHeaderModule,
+        StatModule
     ],
-    declarations: [ProfileComponent]
+    declarations: [
+        ProfileComponent,
+        ChangePasswordComponent,
+        AvatarComponent
+    ]
 })
 export class ProfileModule { }

@@ -8,24 +8,19 @@ import {
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 import { DashboardComponent } from './dashboard.component';
-import {
-    ChangePasswordComponent,
-    AvatarComponent
-} from './components';
-import { StatModule } from '../../shared';
+
 
 @NgModule({
     imports: [
         CommonModule,
         NgbCarouselModule.forRoot(),
         NgbAlertModule.forRoot(),
-        DashboardRoutingModule,
-        StatModule,
+        DashboardRoutingModule
+
     ],
     declarations: [
         DashboardComponent,
-        ChangePasswordComponent,
-        AvatarComponent
+
     ]
 })
 export class DashboardModule { }
