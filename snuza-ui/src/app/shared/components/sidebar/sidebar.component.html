@@ -24,7 +24,9 @@
                         </a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>
+                        <a [routerLink]="['/avatar']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Upload Avatar' | translate }}
+                        </a>
                     </li>
                     <li>
                         <a href="javascript:void(0)"><span>{{ 'submenu' | translate }}</span></a>

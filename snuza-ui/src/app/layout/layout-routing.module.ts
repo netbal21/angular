@@ -11,6 +11,7 @@ const routes: Routes = [
             { path: 'devices-info', loadChildren: './devices-info/devices-info.module#DeviceInfoModule' },
             { path: 'forms', loadChildren: './form/form.module#FormModule' },
             { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
+            { path: 'avatar', loadChildren: './profile/components/uploadAvatar/uploadAvatar.module#AvatarUploadModule' },
         ]
     }
 ];
