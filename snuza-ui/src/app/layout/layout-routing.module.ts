@@ -12,6 +12,7 @@ const routes: Routes = [
             { path: 'forms', loadChildren: './form/form.module#FormModule' },
             { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
             { path: 'avatar', loadChildren: './profile/components/uploadAvatar/uploadAvatar.module#AvatarUploadModule' },
+            { path: 'changePass', loadChildren: './profile/components/changePassword/changePassword.module#ChangePasswordModule' },
         ]
     }
 ];

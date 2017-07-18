@@ -11,11 +11,6 @@ import {ButtonModule} from 'snuza-ui/../primeng/components/button/button';
 import {TabViewModule} from 'snuza-ui/../primeng/components/tabview/tabview';
 import {CodeHighlighterModule} from 'snuza-ui/../primeng/components/codehighlighter/codehighlighter';
 
-import {
-    ChangePasswordComponent,
-    AvatarComponent,
-    AvatarFileUpload
-} from '../profile/components';
 import { StatModule } from '../../shared';
 
 @NgModule({
@@ -31,8 +26,7 @@ import { StatModule } from '../../shared';
         CodeHighlighterModule
     ],
     declarations: [
-        ProfileComponent,
-        ChangePasswordComponent,
+        ProfileComponent
 
     ]
 })

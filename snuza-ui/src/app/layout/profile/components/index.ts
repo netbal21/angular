@@ -1,3 +1,2 @@
 export * from './changePassword/changePassword.component';
-export * from './avatar/avatar.component';
-export * from './uploadAvatar/uploadAvatar';
+export * from './uploadAvatar/uploadAvatar.component';

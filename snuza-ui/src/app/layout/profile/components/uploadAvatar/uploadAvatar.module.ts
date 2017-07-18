@@ -1,6 +1,6 @@
 import {NgModule}     from '@angular/core';
 import {CommonModule} from '@angular/common';
-import {AvatarFileUpload} from './uploadAvatar';
+import {AvatarFileUpload} from './uploadAvatar.component';
 import {FileUploadRoutingModule} from './uploadAvatar-routing.module';
 import {FileUploadModule} from 'snuza-ui/../primeng/components/fileupload/fileupload';
 import {GrowlModule} from 'snuza-ui/../primeng/components/growl/growl';
