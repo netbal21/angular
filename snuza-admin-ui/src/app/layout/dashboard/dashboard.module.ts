@@ -1,21 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {
-    NgbCarouselModule,
-    NgbAlertModule
-} from '@ng-bootstrap/ng-bootstrap';
-
-
-import { DashboardRoutingModule } from './dashboard-routing.module';
+import { ChartsModule as Ng2Charts } from 'ng2-charts';
 import { DashboardComponent } from './dashboard.component';
+import {PageHeaderModule} from "../../shared/modules/page-header/page-header.module";
+import {DashboardRoutingModule} from "./dashboard-routing.module";
 
 
 @NgModule({
     imports: [
         CommonModule,
-        NgbCarouselModule.forRoot(),
-        NgbAlertModule.forRoot(),
-        DashboardRoutingModule
+        Ng2Charts,
+        DashboardRoutingModule,
+        PageHeaderModule
 
     ],
     declarations: [

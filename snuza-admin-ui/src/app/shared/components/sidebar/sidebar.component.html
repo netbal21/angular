@@ -3,13 +3,6 @@
         <a routerLink="/dashboard" [routerLinkActive]="['router-link-active']" class="list-group-item">
             <i class="fa fa-fw fa-dashboard"></i>&nbsp;{{ 'Dashboard' | translate }}
         </a>
-         <a [routerLink]="['/device-register']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-mobile fa-eye"></i>&nbsp;{{ 'Device Register' | translate }}
-        </a>
-
-        <a [routerLink]="['/devices-info']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-eye"></i>&nbsp;{{ 'Devices' | translate }}
-        </a>
 
         <div class="nested-menu">
             <a class="list-group-item" (click)="addExpandClass('pages')">
@@ -37,37 +30,48 @@
             </li>
         </div>
 
+        <div class="nested-menu">
+            <a class="list-group-item" (click)="addExpandClass('clients')">
+                <span><i class="fa fa-user"></i>&nbsp;{{ 'Users' | translate }}&nbsp;</span>
+                <i class="fa fa-caret-down" aria-hidden="true"></i>
+            </a>
+            <li class="nested" [class.expand]="showMenu === 'clients'">
+                <ul class="submenu">
+                    <li>
+                        <a [routerLink]="['/clients']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Clients' | translate }}
+                        </a>
+                    </li>
+                    <li>
+                        <a [routerLink]="['/avatar']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Admin' | translate }}
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </div>
+
+
+        <a [routerLink]="['/devices-info']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-eye"></i>&nbsp;{{ 'Devices' | translate }}
+        </a>
+
+        <a [routerLink]="['/device-register']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-mobile fa-eye"></i>&nbsp;{{ 'Device Register' | translate }}
+        </a>
+
+
         <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Subscription' | translate }}
+            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Payment Groups' | translate }}
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.snuza.picoconnect" target="_blank">
-<img src="assets/images/google_play.png" width="150px" style="padding:10px" class="user-avatar" />
-        </a>
-        <img src="assets/images/app_store.png" width="150px" style="padding:10px" class="user-avatar" />
 
-<!--
-        <a [routerLink]="['/charts']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-bar-chart-o"></i>&nbsp;{{ 'charts' | translate }}
-        </a>
-        <a [routerLink]="['/tables']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-table"></i>&nbsp;{{ 'tables' | translate }}
-        </a>
         <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'forms' | translate }}
-        </a>
-        <a [routerLink]="['/bs-element']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-desktop"></i>&nbsp;{{ 'boostrapElement' | translate }}
-        </a>
-        <a [routerLink]="['/grid']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-fw fa-wrench"></i>&nbsp;{{ 'boostrapGrid' | translate }}
-        </a>
-        <a [routerLink]="['/components']" [routerLinkActive]="['router-link-active']" class="list-group-item">
-            <i class="fa fa-th-list"></i>&nbsp;{{ 'component' | translate }}
+            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Firmware' | translate }}
         </a>
 
+        <a [routerLink]="['/forms']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+            <i class="fa fa-fw fa-edit"></i>&nbsp;{{ 'Hardware' | translate }}
+        </a>
 
-        <a class="list-group-item more-themes" href="http://www.strapui.com/" >
-            {{ 'moretheme' | translate }}
-        </a>-->
     </ul>
 </nav>

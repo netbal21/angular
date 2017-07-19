@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { FormRoutingModule } from './form-routing.module';
-import { FormComponent } from './form.component';
+import { ClientsRoutingModule } from './clients-routing.module';
+import { ClientsComponent } from './clients.component';
 import { PageHeaderModule } from './../../shared';
 
 @NgModule({
     imports: [
         CommonModule,
-        FormRoutingModule,
+        ClientsRoutingModule,
         PageHeaderModule
     ],
-    declarations: [FormComponent]
+    declarations: [ClientsComponent]
 })
-export class FormModule { }
+export class ClientsModule { }
+
