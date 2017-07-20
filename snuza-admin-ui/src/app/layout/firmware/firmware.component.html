@@ -1,0 +1,47 @@
+<h4>Firmware Info</h4>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="firmware">
+    <tr class="header">
+        <th>Product</th>
+        <th>Major</th>
+        <th>Minor</th>
+        <th>Header Version</th>
+        <th>Block Size</th>
+        <th>Block Count</th>
+        <th>Frames per Block</th>
+        <th>Frame Size</th>
+        <th>Size</th>
+        <th>CRC</th>
+        <th>Created Date</th>
+        <th>Description</th>
+        <th>Update</th>
+        <th>Delete</th>
+    </tr>
+    <tr>
+        <td class="  sorting_1">Pico</td>
+        <td class=" ">4</td>
+        <td class=" ">111</td>
+        <td class=" ">1</td>
+        <td class=" ">512</td>
+        <td class=" ">159</td>
+        <td class=" ">32</td>
+        <td class=" ">16</td>
+        <td class=" ">81408</td>
+        <td class=" ">23FFBBC</td>
+        <td class=" ">May 29, 2017</td>
+        <td class=" ">Release</td>
+        <td class=" ">
+            <a href="#">
+                <button class="btn btn-sm btn-primary" type="button" title="Update"> <i class="fa fa-edit"></i></button>
+            </a>
+        </td>
+        <td class=" ">
+            <a href="#" onclick="return confirm('Are you sure you want to delete?');">
+                <button class="btn btn-sm btn-danger" type="button" title="Try to Delete"> <i class="fa fa-times"></i></button>
+            </a>
+        </td>
+    </tr>
+</table>
+
