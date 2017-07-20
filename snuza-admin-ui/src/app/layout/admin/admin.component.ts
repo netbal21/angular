@@ -3,11 +3,11 @@ import { routerTransition } from '../../router.animations';
 
 @Component({
     selector: 'app-form',
-    templateUrl: './clients.component.html',
-    styleUrls: ['./clients.component.scss'],
+    templateUrl: './admin.component.html',
+    styleUrls: ['./admin.component.scss'],
     animations: [routerTransition()]
 })
-export class ClientsComponent implements OnInit {
+export class AdminComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {

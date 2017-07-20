@@ -1,15 +1,89 @@
+<h4>Register Device</h4>
+<span class="fa fa-info-circle">(Use Uppercase letters where expected e.g. Serial Number = A123... and not a123...)</span>
+<div class="row">
 
-    <h2 class="text-muted">Device Register </h2>
-    <div _ngcontent-c4="" class="card mb-3">
-                <div _ngcontent-c4="" class="card-header card-default">
-                    Device Details
-                </div>
-                <div _ngcontent-c4="" class="card-block deviceRegister">
-                    <fieldset _ngcontent-c20="" class="form-group">
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">Decrypted Serial Number * </label>
+        <input disabled _ngcontent-c20="" required class="form-control" placeholder="eg. netbal21">
+    </div>
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">PCB Serial Number * </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. mine@gmail.com">
+    </div>
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">IC Serial Number * </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. 07281231234">
+    </div>
+</div>
+<div class="row">
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">Manufacture Date (UTC) * </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. Ernst">
+    </div>
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">Batch Number *  </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. Otto">
+    </div>
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">Micro Controller Name *  </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. Dettbarn">
+    </div>
+    <div class="col-xs-6 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">Micro Controller Revision * </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. Dettbarn">
+    </div>
+</div>
+<hr/>
+<div class="row">
+    <div class="form-group">
+        <label for="sel1">Payment Group *</label>
+        <select class="form-control"  id="sel1">
+            <option>South Africa</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sel1">Hardware *</label>
+        <select class="form-control"  id="sel1">
+            <option>Africa/Jhb</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sel1">Firmware *</label>
+        <select class="form-control"  id="sel1">
+            <option>Africa/Jhb</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="col-xs-3 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">BLE Name *  </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. Pretoria">
+    </div>
+    <div class="col-xs-3 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">BLE Address *  </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. Gauteng">
+    </div>
+    <div class="col-xs-3 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">BLE Firmware Version * </label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. 0001">
+    </div>
+    <div class="col-xs-3 form-group">
+        <label _ngcontent-c20="" class="ng-tns-c20-1">BLE Hardware Version *</label>
+        <input _ngcontent-c20="" required class="form-control" placeholder="eg. 0001">
+    </div>
+</div>
 
-                    <label _ngcontent-c20="" class="ng-tns-c20-1">Please enter the device's serial number that is on your device. </label>
-                    <input  _ngcontent-c20="" required class="form-control" placeholder="eg. 52648d956">
-                </fieldset>
-                </div>
-                <button class="btn btn-success"  type="submit">Register</button>
-            </div>
+<hr/>
+<button class="btn btn-success" type="submit">Save</button>
+
+<a [routerLink]="['/devices-info']" [routerLinkActive]="['router-link-active']" class="btn btn-primary">
+  {{ 'Cancel' | translate }}
+
+</a>

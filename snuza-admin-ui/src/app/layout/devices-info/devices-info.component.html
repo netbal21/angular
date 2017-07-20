@@ -1,15 +1,69 @@
-<div>
-    <h2 class="text-muted">Device Info
-        <small>Statistics Overview</small>
-    </h2>
-    <div class="row">
-        <div _ngcontent-c4="" class="card mb-3">
-            <div _ngcontent-c4="" class="card-header card-default">
-                Device Details
-            </div>
-            <div _ngcontent-c4="" class="card-block">
-                Content
-            </div>
-        </div>
+<h4>Devices Info</h4>
+
+<div class="row">
+
+    <div id="username_form_group_parent_div" class="form-group ">
+        <input id="serialname" class="form-control" type="text" placeholder="Filter by Serial Number" value="" name="serialnumber">
+    </div>
+
+    <div class="form-group   " id="email_form_group_parent_div">
+        <input id="icnumber" class="form-control" type="text" placeholder="Filter by IC Number" value="" name="icnumber">
+    </div>
+
+    <div id="statusgroup" class="form-group ">
+        <select id="status" name="status" class="form-control">
+            <option value="">-- Filter By Status --</option>
+            <option value="AF">New</option>
+            <option value="AL">Activated</option>
+
+        </select>
     </div>
 </div>
+<a [routerLink]="['/device-register']" [routerLinkActive]="['router-link-active']" class="btn btn-primary">
+    <i class="fa fa-plus"></i>&nbsp;{{ 'Device Register' | translate }}
+</a>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+<table id="myTable">
+    <tr class="header">
+        <th>Decrypted Serial Number</th>
+        <th>Activation Date</th>
+        <th>Users</th>
+        <th>Primary user email</th>
+        <th>Firmware</th>
+        <th>Last week running time</th>
+        <th>Last day running time</th>
+        <th>Last day debug 100n count</th>
+        <th>Options</th>
+    </tr>
+    <tr>
+        <td>C729053FEA</td>
+        <td>2017-05-12</td>
+        <td>Alfreds Futterkiste</td>
+        <td>south@africa.com</td>
+        <td>Pico:4.111</td>
+        <td>></td>
+        <td></td>
+        <td></td>
+        <td>
+            <div class="nested-menu">
+                <a class="list-group-item" (click)="addExpandClass('list')">
+                    <span><i class="fa fa-user"></i>&nbsp;{{ 'Options' | translate }}&nbsp;</span>
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </a>
+                <li class="nested" [class.expand]="showMenu === 'list'">
+                    <ul class="submenu">
+                        <li>
+                            <a>Test</a>
+                        </li>
+                        <li>
+                            <a>Test 2</a>
+                        </li>
+                    </ul>
+                </li>
+            </div>
+
+        </td>
+
+    </tr>
+</table>
+

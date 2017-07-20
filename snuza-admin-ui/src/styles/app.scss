@@ -8,3 +8,41 @@ label{
     color:#222;
 }
 
+#myInput {
+
+    width: 300px; /* Full-width */
+    float: right;
+    font-size: 1rem;/* Increase font-size */
+    padding: 10px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 6px; /* Add some space below the input */
+}
+
+#myTable {
+    color:#222;
+    border-collapse: collapse; /* Collapse borders */
+    width: 100%; /* Full-width */
+    border: 1px solid #ddd; /* Add a grey border */
+    font-size: 14px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+    text-align: left; /* Left-align text */
+    padding: 12px; /* Add padding */
+    border-right: 1px solid #ddd;
+
+}
+
+#myTable tr {
+    /* Add a bottom border to all table rows */
+    border-bottom: 1px solid #ddd;
+
+}
+
+#myTable tr.header{
+    /* Add a grey background color to the table header and on hover */
+    background-color: #c1c1c1;
+}
+#myTable tr:hover {
+    background-color: #ddd;
+}

@@ -10,6 +10,7 @@ const routes: Routes = [
             { path: 'device-register', loadChildren: './device-register/device-register.module#DeviceRegisterModule' },
             { path: 'devices-info', loadChildren: './devices-info/devices-info.module#DeviceInfoModule' },
             { path: 'clients', loadChildren: './clients/clients.module#ClientsModule' },
+            { path: 'admin', loadChildren: './admin/admin.module#AdminModule' },
             { path: 'profile', loadChildren: './profile/profile.module#ProfileModule' },
             { path: 'avatar', loadChildren: './profile/components/uploadAvatar/uploadAvatar.module#AvatarUploadModule' },
             { path: 'changePass', loadChildren: './profile/components/changePassword/changePassword.module#ChangePasswordModule' },

@@ -4,7 +4,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { PageHeaderModule } from './../../shared';
 import { ProfileComponent } from './profile.component';
 
-describe('ClientsComponent', () => {
+describe('AdminComponent', () => {
   let component: ProfileComponent;
   let fixture: ComponentFixture<ProfileComponent>;
 
