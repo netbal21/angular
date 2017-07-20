@@ -1,0 +1,78 @@
+<h4>Payment Groups Info</h4>
+<h6>IN PROGRESS</h6>
+<div class="row">
+
+    <div id="username_form_group_parent_div" class="form-group ">
+        <input id="username" class="form-control" type="text" placeholder="Filter by Username" value="" name="username">
+    </div>
+
+    <div class="form-group   " id="email_form_group_parent_div">
+        <input id="email" class="form-control" type="text" placeholder="Filter by Email Address" value="" name="email">
+    </div>
+
+    <div id="country_form_group_parent_div" class="form-group ">
+        <select id="country" name="country" class="form-control">
+            <option value="">-- Filter By Country --</option>
+            <option value="AF">Afghanistan</option>
+            <option value="AL">Albania</option>
+            <option value="DZ">Algeria</option>
+            <option value="AS">American Samoa</option>
+            <option value="AD">Andorra</option>
+        </select>
+    </div>
+
+    <div id="fullName_form_group_parent_div">
+        <input id="fullName" class="form-control" type="text" placeholder="Filter by Name" value="" name="fullName">
+    </div>
+</div>
+
+<a [routerLink]="['/profile']" [routerLinkActive]="['router-link-active']" class="btn btn-primary fa fa-plus">
+    {{ 'Add' | translate }}
+</a>
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<table id="myTable">
+    <tr class="header">
+        <th>Username</th>
+        <th>Email</th>
+        <th>Full Name</th>
+        <th>Country</th>
+        <th>Date Created</th>
+        <th>View</th>
+        <th>Update</th>
+        <th>Copy??</th>
+        <th>Reset Password</th>
+    </tr>
+    <tr>
+        <td>netbal21</td>
+        <td>netbal21@gmail.com</td>
+        <td>Ernst O Dettbarn</td>
+        <td>ZA</td>
+
+        <td>Jun 14, 2017</td>
+
+        <td>
+            <a href="#">
+                <button class="btn btn-sm btn-success" type="button" title="View"> <i class="fa fa-search"></i></button>
+            </a>
+        </td>
+        <td>
+            <a href="#">
+                <button class="btn btn-sm btn-primary" type="button" title="Update"> <i class="fa fa-edit"></i></button>
+            </a>
+        </td>
+        <td>
+            <a href="#">
+                <button class="btn btn-sm btn-primary" type="button" title="Copy"> <i class="fa fa-copy"></i></button>
+            </a>
+        </td>
+        <td>
+            <a href="#">
+                <button class="btn btn-sm btn-primary" type="button" title="Reset Password" onclick="return confirm('Are you sure you want to reset password for this Admin. New Password will be sent on his email');">
+                    <i class="fa fa-unlock"></i></button>
+            </a>
+        </td>
+
+    </tr>
+</table>
+
